@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E293B"
+    tools:context=".FrmDangKy">
+
+    <TextView
+        android:id="@+id/TxtSignIn"
+        android:layout_width="413dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="44dp"
+        android:drawableLeft="@drawable/left_accessory"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="#F3EDEF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+
+        android:id="@+id/view6"
+        android:layout_width="407dp"
+        android:layout_height="400dp"
+        android:backgroundTint="#D6D3D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSignIn" />
+
+    <EditText
+
+        android:id="@+id/Edt_Emaildk"
+        android:layout_width="359dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="15dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#F80404"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSignIn" />
+
+    <EditText
+        android:id="@+id/Edt_Passdk"
+        android:layout_width="359dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColor="#F80404"
+        android:textColorHint="#090000"
+        app:layout_constraintEnd_toEndOf="@+id/Edt_Emaildk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Edt_Emaildk"
+        app:layout_constraintTop_toBottomOf="@+id/Edt_Emaildk" />
+
+    <Button
+        android:id="@+id/Btn_SignIn"
+        android:layout_width="362dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#1C37CF"
+        android:text="Sign In"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Edt_Passdk"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Edt_Passdk"
+        app:layout_constraintTop_toBottomOf="@+id/Edt_Passdk" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:text="New here?"
+        android:textColor="#F4F1F1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/Txt_Tao"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/Txt_Tao"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="88dp"
+        android:text="Create an account"
+        android:textColor="#1936D3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="201dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="Forgotten Password?"
+        android:textColor="#94DACBCB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/Btn_SignIn"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/Btn_SignIn"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_SignIn" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#F4F0F0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSignIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

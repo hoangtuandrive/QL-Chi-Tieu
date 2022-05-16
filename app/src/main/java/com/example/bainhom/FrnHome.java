@@ -193,6 +193,8 @@ public class FrnHome extends AppCompatActivity {
                 Double  newTien=Double.parseDouble(updateTien.getText().toString());
                 dv.setDichvu(newDv);
                 dv.setTien(newTien);
+                //Update SQL
+                db.updateDV(dv,newTien,newDv);
 
                 myRefup.child(pathObject).child(String.valueOf(dv.getId())).updateChildren(dv.toMap(), new DatabaseReference.CompletionListener() {
                     @Override

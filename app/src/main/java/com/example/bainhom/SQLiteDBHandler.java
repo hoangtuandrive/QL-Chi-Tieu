@@ -100,16 +100,12 @@ public class SQLiteDBHandler extends SQLiteOpenHelper {
         return dvList ;
     }
 
-    public int updateDV(DV dv) {
+    public int updateDV(DV dv,double tien, String dichvu) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_ID, dv.getId());
-        values.put(KEY_TIEN, dv.getTien());
-        values.put(KEY_DICHVU, dv.getDichvu());
-        values.put(KEY_GHICHU, dv.getGhichu());
-        values.put(KEY_NGAY, dv.getNgay());
-        values.put(KEY_THANHTOAN, dv.getThanhtoan());
+        values.put(KEY_TIEN, tien);
+        values.put(KEY_DICHVU, dichvu);
 
         // updating row
         return db.update(TABLE_DichVu, values, KEY_ID + " = ?",

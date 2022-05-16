@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E293B"
+    tools:context=".FrnHome">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Your Balance"
+        android:textColor="#F4F1F1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Txt_ViTien"
+        android:layout_width="221dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#F1EBEB"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/Btn_EditBa"
+        android:layout_width="119dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#02D8CDCD"
+        android:drawableTop="@drawable/editba"
+        android:text=" Edit Balance"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_AddSe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_ViTien" />
+
+    <Button
+        android:id="@+id/Btn_AddSe"
+        android:layout_width="119dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#02D8CDCD"
+        android:drawableTop="@drawable/congsee"
+        android:text="Add Spending"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Btn_EditBa"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_LogOut"
+        app:layout_constraintTop_toTopOf="@+id/Btn_EditBa"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Btn_LogOut"
+        android:layout_width="119dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#02D8CDCD"
+        android:drawableTop="@drawable/log"
+        android:text="Log Out "
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Btn_AddSe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Btn_AddSe"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listItem_gd"
+        android:layout_width="410dp"
+        android:layout_height="412dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="Transactions History"
+        android:textColor="#EFE9E9"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/listItem_gd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_AddSe"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

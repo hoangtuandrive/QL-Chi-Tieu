@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F7"
+    tools:context=".MainActivity2">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="15dp"
+        android:background="#1E293B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="298dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint=" Nhập loại dịch vụ cần tìm"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgVe"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_quaylai" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Loại Dịch Vụ"
+        android:textColor="#2E8A5E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <ListView
+        android:id="@+id/lv_dichvu"
+        android:layout_width="374dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="14dp"
+        android:background="#FFFFFF"
+        android:divider="#FAF9F7"
+        android:scrollbarSize="50dp"
+        android:dividerHeight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

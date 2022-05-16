@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "299536608692",
+    "project_id": "bainhom-baf47",
+    "storage_bucket": "bainhom-baf47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299536608692:android:f098675d74b2435dc3d6e1",
+        "android_client_info": {
+          "package_name": "com.example.bainhom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299536608692-9vuqijprqqjjvlntj0vmn5gn3g3mhqru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmMo_337LyT_2i3tmIM2WydCVIOTr-Tiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299536608692-9vuqijprqqjjvlntj0vmn5gn3g3mhqru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

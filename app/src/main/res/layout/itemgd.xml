@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:background="@drawable/border_item2"
+        android:id="@+id/view5"
+        android:layout_width="411dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Img_anhGd"
+        android:layout_width="83dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:srcCompat="@drawable/anhminhhoa" />
+
+    <TextView
+        android:id="@+id/Txt_Tengd"
+        android:layout_width="141dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="172dp"
+        android:text="Shopping"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Img_anhGd" />
+
+    <TextView
+        android:id="@+id/Txt_Tien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="May1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/Txt_Tengd" />
+
+    <ImageButton
+        android:id="@+id/Img_Xoa"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#6FBDA1"
+        app:layout_constraintBottom_toBottomOf="@+id/Img_Sua"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/Img_Sua"
+        app:srcCompat="@drawable/xoa" />
+
+    <ImageButton
+        android:id="@+id/Img_Sua"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#6FBDA1"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/Img_Xoa"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Txt_Tengd"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:srcCompat="@drawable/xua" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

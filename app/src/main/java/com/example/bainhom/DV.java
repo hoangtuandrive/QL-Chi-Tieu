@@ -10,6 +10,27 @@ public class DV {
     private String ghichu;
     private String ngay;
     private String thanhtoan;
+    private int Anh;
+
+     public DV(double tien, String dichvu, String ghichu, String ngay, String thanhtoan, int anh) {
+         this.tien = tien;
+         this.dichvu = dichvu;
+         this.ghichu = ghichu;
+         this.ngay = ngay;
+         this.thanhtoan = thanhtoan;
+         this.Anh = anh;
+    }
+
+
+    public int getAnh() {
+        return Anh;
+    }
+
+    public void setAnh(int anh) {
+        Anh = anh;
+    }
+
+
 
     public DV(double tien, String dichvu, String ghichu, String ngay, String thanhtoan) {
         this.tien = tien;
@@ -74,7 +95,7 @@ public class DV {
     }
     public   Map<String, Object> toMap(){
         HashMap<String,Object> result=new HashMap<>();
-        result.put("dichvu",dichvu);
+        result.put("ghichu",ghichu);
         result.put("tien",tien);
         return  result;
     }

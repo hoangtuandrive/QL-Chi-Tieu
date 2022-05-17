@@ -75,8 +75,8 @@
 
     <ListView
         android:id="@+id/listItem_gd"
-        android:layout_width="409dp"
-        android:layout_height="422dp"
+        android:layout_width="410dp"
+        android:layout_height="412dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="28dp"
-        android:text="Spending History"
+        android:text="Spending List"
         android:textColor="#EFE9E9"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/listItem_gd"

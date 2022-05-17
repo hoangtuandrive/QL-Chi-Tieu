@@ -6,6 +6,8 @@ public class DichVu implements Serializable {
     private String name;
     private int hinh;
 
+
+
     public DichVu(String name, int hinh) {
         this.name = name;
         this.hinh = hinh;

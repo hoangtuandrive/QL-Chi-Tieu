@@ -109,6 +109,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
               DV dv1= ThemDv();
+                Toast.makeText(getApplicationContext(),"Record inserted successfully",Toast.LENGTH_LONG).show();
+                AddDv(dv1);
+
 //PHẦN TÔNG LÀM ----------------------------------------------
                 Calendar calendar = Calendar.getInstance();
                 StorageReference mountainsRef = storageRef.child(edtGhiChu.getText().toString().trim()+".png");
@@ -173,12 +176,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    private int idImage;
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if(requestCode==REQUEST_CODE_EDIT ){
 
-            int idImage = data.getIntExtra("image",0);
+            idImage = data.getIntExtra("image",0);
             String name = data.getStringExtra("name");
 
             imgchon.setImageResource(idImage);
@@ -227,11 +230,12 @@ public class MainActivity extends AppCompatActivity {
     }
     private DV ThemDv(){
         double tien=Double.parseDouble(edtTien.getText().toString());
+        int Anh= idImage;
         String dichvu=edtDv.getText().toString();
         String ghichu=edtGhiChu.getText().toString();
         String ngay=edtNgay.getText().toString();
         String thanhtoan=edtThanhToan.getText().toString();
-        DV dv=new DV(tien,dichvu,ghichu,ngay,thanhtoan);
+        DV dv=new DV(tien,dichvu,ghichu,ngay,thanhtoan,Anh);
         return dv;
     }
 

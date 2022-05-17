@@ -169,12 +169,12 @@ public class FrnHome extends AppCompatActivity {
         window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setCancelable(false);
 
-        EditText updateDv=dialog.findViewById(R.id.Edt_DichVudia);
+        EditText updateGC=dialog.findViewById(R.id.Edt_DichVudia);
         EditText updateTien=dialog.findViewById(R.id.Edt_Tiendia);
         Button btnHuy=dialog.findViewById(R.id.Btn_Huydia);
         Button btnUpdate=dialog.findViewById(R.id.Btn_Suadia);
 
-        updateDv.setText(dv.getDichvu());
+        updateGC.setText(dv.getGhichu());
         updateTien.setText(Double.toString(dv.getTien()));
         double Tiencu= dv.getTien();
         btnHuy.setOnClickListener(new View.OnClickListener() {
@@ -189,12 +189,12 @@ public class FrnHome extends AppCompatActivity {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRefup = database.getReference("DanhSach");
                 String  pathObject= FirebaseAuth.getInstance().getCurrentUser().getUid();
-                String newDv=updateDv.getText().toString().trim();
+                String newGC=updateGC.getText().toString().trim();
                 Double  newTien=Double.parseDouble(updateTien.getText().toString());
-                dv.setDichvu(newDv);
+                dv.setGhichu(newGC);
                 dv.setTien(newTien);
                 //Update SQL
-                db.updateDV(dv,newTien,newDv);
+                db.updateDV(dv,newTien,newGC);
 
                 myRefup.child(pathObject).child(String.valueOf(dv.getId())).updateChildren(dv.toMap(), new DatabaseReference.CompletionListener() {
                     @Override

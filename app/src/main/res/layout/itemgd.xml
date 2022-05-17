@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <View
-        android:background="@drawable/border_item2"
         android:id="@+id/view5"
-        android:layout_width="411dp"
-        android:layout_height="103dp"
+        android:layout_width="409dp"
+        android:layout_height="141dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/border_item2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/Img_anhGd"
-        android:layout_width="83dp"
-        android:layout_height="69dp"
+        android:layout_width="84dp"
+        android:layout_height="108dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:id="@+id/Txt_Tien"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="56dp"
         android:text="May1"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view5"
@@ -68,5 +68,16 @@
         app:layout_constraintStart_toEndOf="@+id/Txt_Tengd"
         app:layout_constraintTop_toTopOf="@+id/view5"
         app:srcCompat="@drawable/xua" />
+
+    <TextView
+        android:id="@+id/Txt__GhiChu"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/Img_Sua"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Txt_Tien"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_Tengd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
